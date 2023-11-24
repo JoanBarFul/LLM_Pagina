@@ -1,23 +1,60 @@
 *{
     margin: 0; /*Lleva el marge dels costats*/
 }
-.rayas{
-    justify-self: flex-start;
+a{text-decoration: none;}
+a:hover {color: white; text-decoration: none }
+a:visited {color: white; text-decoration: none }
+.Cleft span{
+    border: 2px solid red;
+}
+.Vbar  {
+    height: 75px;
+    width: auto;
 }
 .logo{
+    height: 85px;
+    width: auto;
+}
+.Cleft{
+    background-color:  blue;
 
+    display: flex;
+    align-items: center;
+    flex-basis: 33%;
+    justify-content: space-evenly;
+}
+.Ccenter{
+    background-color:  blue;
+
+    flex-basis: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Ccenter img{
+    border: 2px solid red;
+}
+.Cright span{
+    border: 2px solid red;
+    min-width: max-content block;
+    min-height: max-c;
+}
+.Cright{
+    background-color:  blue;
+    display: flex;
+    align-items: center;
+    flex-basis: 33%;
+    justify-content: space-around;
 }
 header nav{
-border: 10px solid red;
-min-width: 100%;
-
+    display: flex;
+    min-width: 100%;
+    max-height: 100px;
+    justify-content: space-around;
 }
 header{
-    display: flex;
-    background-color: black;
-    max-height: auto;
-    align-items: center;
-    justify-content: center;
+    background-color: green;
+    max-height: 100px; /*CANVIAR*/
 }
 footer{
     display: flex;
