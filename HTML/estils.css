@@ -1,7 +1,7 @@
 *{
     margin: 0; /*Lleva el marge dels costats*/
 }
-a{text-decoration: none;}
+a{color: white; text-decoration: none;}
 a:hover {color: white; text-decoration: none }
 a:visited {color: white; text-decoration: none }
 .Cleft span{
@@ -37,7 +37,6 @@ a:visited {color: white; text-decoration: none }
 .Cright span{
     border: 2px solid red;
     min-width: max-content block;
-    min-height: max-c;
 }
 .Cright{
     background-color:  blue;
@@ -52,9 +51,11 @@ header nav{
     max-height: 100px;
     justify-content: space-around;
 }
-header{
-    background-color: green;
-    max-height: 100px; /*CANVIAR*/
+header h1{
+    display: flex;
+    border: 1px solid red;
+    justify-content: center;
+    margin: 30px;
 }
 footer{
     display: flex;
@@ -64,4 +65,29 @@ footer{
     background-color: black;
     color: white;
     padding: 20px;
+    margin-top: 10px;
+}
+/*----------------------------- BUILDS -------------------------*/
+.builds article{
+    display: flex;
+    justify-content: center;
+}
+.builds .Cerca section{
+    border: 1px solid red;
+    min-width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+.builds .Cerca span{
+    border: 1px solid red;
+    min-width: 45%;
+}
+.builds .Cerca ul{
+    display: flex;
+    flex-direction: row;
+}
+.builds .Cerca ul img{
+    border: 1px solid red;
+    height: 30px;
+    width: auto;
 }
