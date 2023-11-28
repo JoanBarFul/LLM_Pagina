@@ -2,8 +2,8 @@
     margin: 0; /*Lleva el marge dels costats*/
 }
 a{color: white; text-decoration: none;}
-a:hover {color: white; text-decoration: none }
-a:visited {color: white; text-decoration: none }
+a:hover {color: white; font-family: 'Courier New', Courier, monospace; text-decoration: none }
+a:visited {color: white; font-family: 'Courier New', Courier, monospace; text-decoration: none }
 .Cleft span{
     border: 2px solid red;
 }
@@ -25,7 +25,6 @@ a:visited {color: white; text-decoration: none }
 }
 .Ccenter{
     background-color:  blue;
-
     flex-basis: 33%;
     display: flex;
     align-items: center;
@@ -37,6 +36,7 @@ a:visited {color: white; text-decoration: none }
 .Cright span{
     border: 2px solid red;
     min-width: max-content block;
+    text-align: center;
 }
 .Cright{
     background-color:  blue;
@@ -51,12 +51,19 @@ header nav{
     max-height: 100px;
     justify-content: space-around;
 }
-header h1{
-    display: flex;
-    border: 1px solid red;
-    justify-content: center;
-    margin: 30px;
+header{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
 }
+header h1{
+    background-color: green;
+    display: flex;
+    margin: 3%;
+    justify-content: center;
+    font-size: 5em;
+}
+
+/* ----------------------------- FOOTER --------------------------------------- */
 footer{
     display: flex;
     flex: 1;
@@ -67,20 +74,34 @@ footer{
     padding: 20px;
     margin-top: 10px;
 }
-/*----------------------------- BUILDS -------------------------*/
-.builds article{
+/* ----------------------------- INICIO --------------------------------------- */
+main article{
     display: flex;
+    flex-direction: column;
+    border: green 2px solid;
+    justify-content: center;
+    margin: 0%;
+}
+main article img{
+    max-width: 60%;
+    height: auto;
+}
+
+/*----------------------------- BUILDS -------------------------*/
+.builds .Cerca{
+    display: flex;
+    min-width: 75%;
+    background-color: red;
     justify-content: center;
 }
 .builds .Cerca section{
-    border: 1px solid red;
-    min-width: 30%;
+    border: 1px solid blue;
     display: flex;
+    max-width: 50%;
     justify-content: space-between;
 }
 .builds .Cerca span{
     border: 1px solid red;
-    min-width: 45%;
 }
 .builds .Cerca ul{
     display: flex;
