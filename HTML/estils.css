@@ -8,7 +8,7 @@ a:visited {color: white; font-family: 'Courier New', Courier, monospace; text-de
     border: 2px solid red;
 }
 .Vbar  {
-    height: 75px;
+    height: 90%;
     width: auto;
 }
 .logo{
@@ -61,6 +61,7 @@ header h1{
     margin: 3%;
     justify-content: center;
     font-size: 5em;
+    text-align: center;
 }
 
 /* ----------------------------- FOOTER --------------------------------------- */
@@ -87,28 +88,72 @@ main article img{
     height: auto;
 }
 
-/*----------------------------- BUILDS -------------------------*/
-.builds .Cerca{
+/*----------------------------- CHARACTERS -------------------------*/
+.char main{
     display: flex;
-    min-width: 75%;
-    background-color: red;
     justify-content: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    flex-direction: column;
 }
-.builds .Cerca section{
+/*----------- BARRA CERCA --------------*/
+.char .Cerca{
+    display: flex;
+    min-width: 100%;
+    margin-bottom: 20px;
+}
+.char .Cerca section{
     border: 1px solid blue;
     display: flex;
-    max-width: 50%;
     justify-content: space-between;
+    margin: 5px;
 }
-.builds .Cerca span{
+.char .Cerca span{
     border: 1px solid red;
+    min-width: 48%;
+    display: flex;
 }
-.builds .Cerca ul{
+.Fcenter {
+    justify-content: center;
+}
+.Fright{
+    justify-content: flex-end;
+}
+.char .Cerca ul{
+    background-color: blue;
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
-.builds .Cerca ul img{
+.char .Cerca ul img{
     border: 1px solid red;
     height: 30px;
     width: auto;
+    margin: 10px;
+}
+/*----------- CHARACTER LIST --------------*/
+.Charlist{
+    display:flex;
+}
+.Charlist section{
+    display: flex;
+    align-content: center;
+}
+.Charicon{
+    height: 80px;
+    width: auto;
+}
+.Charlist span{
+    border: 1px solid black;
+
+}
+.Charinfo{
+    min-width: 75%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.Charname{
+min-width: 25%;
 }
