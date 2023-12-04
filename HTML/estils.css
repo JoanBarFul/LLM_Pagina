@@ -57,18 +57,20 @@ header nav{
 header{
     color: white;
     font-family: 'Courier New', Courier, monospace;
-    background-image: url("Recursos/charbanner.jpg");
-    background-size: cover;
-    background-position: center;
-    border: white solid 1px;
+    height: auto;
 }
 .char header h1{
-    background-color: green;
     display: flex;
-    margin: 3%;
+    padding: 3%;
     justify-content: center;
     font-size: 5em;
     text-align: center;
+}
+.char div{
+    background-image: url("Recursos/charbanner.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 100%;
 }
 /* ----------------------------- FOOTER --------------------------------------- */
 footer{
@@ -83,21 +85,10 @@ footer{
 }
 /* ----------------------------- MAIN --------------------------------------- */
 body{
-background-color: #1c1c20;
+background-color: black;
 color: white;
 }
 /* ----------------------------- INICIO --------------------------------------- */
-main article{
-    display: flex;
-    flex-direction: column;
-    border: green 2px solid;
-    justify-content: center;
-    margin: 0%;
-}
-main article img{
-    max-width: 60%;
-    height: auto;
-}
 
 /*----------------------------- CHARACTERS -------------------------*/
 .char main{
@@ -108,10 +99,24 @@ main article img{
     flex-direction: column;
 }
 /*----------- BARRA CERCA --------------*/
+.char main article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0%;
+}
+.char article img{
+    max-width: 60%;
+    height: auto;
+}
+.char main{
+    margin-top: 2%;
+}
 .char .Cerca{
     display: flex;
     min-width: 100%;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
+    background-color: #252527;
 }
 .char .Cerca section{
     border: 1px solid blue;
@@ -135,36 +140,90 @@ main article img{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-self: center;
 }
 .char .Cerca ul img{
     border: 1px solid red;
     height: 30px;
     width: auto;
-    margin: 10px;
+    padding: 10px;
 }
 /*----------- CHARACTER LIST --------------*/
+
 .Charlist{
-    display:flex;
+    display: flex;
+    padding-top: 2%;
 }
-.Charlist section{
+.Charlist section {
     display: flex;
     align-content: center;
+    background-color: #252527;
+    justify-content: space-between;
+    margin-bottom: 1%;
+    padding: 2%;
 }
 .Charicon{
-    height: 80px;
+    height: 10px;
     width: auto;
 }
-.Charlist span{
-    border: 1px solid black;
-
+.Charlist .pj{
+    background-color: #303033;
+    min-width: 45%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2%;
+    border: red solid 1px;
+    border-radius: 10px;
 }
 .Charinfo{
-    min-width: 75%;
-    padding: 10px;
+    max-width: auto;
+    padding: 2px;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-content: space-between;
+    min-height: 70%;
 }
 .Charname{
-min-width: 25%;
+    min-width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-content: center;
+}
+.pjinf{
+    display: flex;
+    flex-direction: column; 
+    min-width: 75%;
+    margin-right: 2%;
+}
+.Element{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    min-height: 80%;
+    min-width: auto;
+}
+.Element img{
+    align-self: center;
+}
+.Type{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    min-height: 80%;
+    min-width: auto;
+}
+.Type img{
+    align-self: center;
+}
+.Stars{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    min-height: 80%;
+    min-width: auto;
+}
+.Stars img{
+    align-self: center;
 }
