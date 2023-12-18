@@ -72,3 +72,9 @@ Contiene los sets de los equipamientos
 1. PhotoShop, para hacer las líneas, recortar imágenes y crear los iconos de anillo, collar y botas
 2. w3schools, para consultar algunas cosas
 3. VisualStudioCode, para redactar todo el código
+
+## Cosas a millorar
+1. Utilizar box-size
+2. Imatges a em o %
+3. Documentació redactar el prosesos de les coses 
+4. Affegir contingut multimèdia
