@@ -57,6 +57,7 @@ nav a{
     min-width: max-content block;
     text-align: center;
 }
+
 /*Coloca los elementos del nav y le pone un color de fondo*/
 header nav{
     display: flex;
@@ -71,6 +72,24 @@ header{
     font-family: 'Courier New', Courier, monospace;
     height: auto;
 }
+/*Contenedor para poner en columna la lista*/
+#contenedor_teams{
+    min-width: 49%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    display: inline-block;
+}
+/* Submenus desplegables de "TEAMS" */
+.submenu_teams {
+    display: none;
+    position: absolute;
+}
+
+.teams:hover  .submenu_teams {
+    display: block;
+}
+
 /* Define el margen del título de la pagina y su posicion */
 .char header h1{
     display: flex;
