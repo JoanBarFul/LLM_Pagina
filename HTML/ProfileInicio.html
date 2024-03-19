@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyProfile</title>
+    <link rel="stylesheet" type="text/css" href="estils.css">
+</head>
+<body class="profileInicio">
+    <header>
+        <nav><!--Esto es la barra de navegación que tiene tres parte, la central con el logo, la derecha con dos links y la izquierda con dos links-->
+            <span class="Cleft"><!--Parte de la izquierda del nav-->
+                    <span id="contenedor_char">
+                        <p class="charnav">CHARACTERS</p> <!--Vista principal de los "characters"-->
+                        <ul class="submenu_charnav"> <!-- Submenus desplegables -->
+                            <li><a href="char.html">LIST</a></li>
+                            <li><a href="">BUILDS</a></li>
+                            <li><a href="">ARTIFACTS</a></li>
+                        </ul>
+                    </span>
+                    <img class="Vbar" src="Recursos\rayas.png" height=/>
+                    <span id="contenedor_teams">
+                        <p class="teams">TEAMS</p> <!-- Vista principal -->
+                        <ul class="submenu_teams"> <!-- Submenus desplegables -->
+                            <li><a href="">ARENA</a></li>
+                            <li><a href="">RTA</a></li>
+                            <li><a href="">GUILD</a></li>
+                            <li><a href="">HUNT</a></li>
+                            <li><a href="">RIFT</a></li>
+                            <li><a href="">LABIRINTH</a></li>
+                            <li><a href="">ESPIRIT</a></li>
+                            <li><a href="">EXPEDITIONS</a></li>
+                        </ul>
+                    </span>
+            </span>
+            <span class="Ccenter"> <!--Parte central del nav-->
+                <img class="Vbar" src="Recursos\rayas.png" height=/>
+                <a href="inicio.html"><img class="logo" src="Recursos\logoE7.png"/></a>
+                <img class="Vbar" src="Recursos\rayas.png" height=/>
+            </span>
+            <span class="Cright">
+                <span id="contenedor_others">
+                    <p class="others">OTHERS</p>
+                    <ul class="submenu_others">
+                        <li><a href="">SUMMON SIM</a></li>
+                    </ul>
+                </span>                        
+                <img class="Vbar" src="Recursos\rayas.png" height=/>
+                <span id="contenedor_profile">
+                    <p class="profile">PROFILE</p>
+                    <ul class="submenu_profile">
+                        <li  id="logbutton"><button id="buttonid" type="button" onclick="logInOut()" class="login">LOG IN/OUT</button></li>
+
+                    </ul>
+                </span>
+                
+            </span>
+        </nav>
+        <h1>PROFILE</h1>
+
+    </header>
+    <main>
+        <section id="menuPerfil"> <!--Menu de la izquierda-->
+            <ul>
+                <li><a href="">PROFILE</a></li>
+                <li><a href="">BUILDS</a></li>
+                <li><a href="">SAVED BUILDS</a></li>
+                <li><a href="">INFORMATION</a></li>
+            </ul>
+        </section>
+        <section id="PerfilInfoCuerpo"><!--Cuerpo principal de la pagina-->
+            <article id="PerfilInicioInformation">
+                <span id="PIFIzq">
+                    <span id="ProfilePictureCont">
+                        <img id="ProfilePicture" src="Recursos\PJ_Ic\benimaruPortrait.png" alt="">
+                    </span>
+                    <span id="PIFIzqInfo">
+                        <img id="GuildPicture" src="Recursos\guildIMG.png" alt="">
+                        <p>GUILD</p>
+                        <p id="nombreGuild">Ayasakura</p>
+                        <p id="nivelGuild">Lvl.20</p>
+                    </span>
+                    <span id="lineProfileVCont">
+                        <img id="lineProfileV" src="Recursos\rayas.png" alt="">
+                    </span>
+                </span>
+                <span id="PIFDer">
+                    <p id="nickName">BARFUL</p>
+                    <p id="server">Europe</p>
+                    <p id="level">Lvl.69</p>
+                </span>
+            </article>
+            <nav>linea vertical</nav>
+            <article id="arenaInfo">
+                <span id="MPArena">
+                    <button id="ocultarArena"><img src="Recursos\visible.png" alt=""></button>
+                    <img id="arenaLogo" src="Recursos\guildIMG.png" alt="">
+                    <p>Arena</p>
+                    <p id="arenaRank">Champion</p>
+                </span>
+                <span id="MPRTA">
+                    <button id="ocultarRTA"><img src="Recursos\visible.png" alt=""></button>
+                    <img id="RTALogo" src="Recursos\guildIMG.png" alt="">
+                    <p>Arena</p>
+                    <p id="RTARank">Champion</p>
+                </span>
+            </article>
+            <nav>linea vertical</nav>
+            <article id="ayudantes">
+                <button>editar ayudantes</button>
+                <img class="ayudanteIMG" src="Recursos\PJ_Ic\janutaPortrait.png" alt="">
+                <img class="ayudanteIMG" src="Recursos\PJ_Ic\c1097_s01_s.png" alt="">
+                <img class="ayudanteIMG" src="Recursos\PJ_Ic\c1086_s.png" alt="">
+                <img class="ayudanteIMG" src="Recursos\PJ_Ic\c1012_s.png" alt="">
+                <img class="ayudanteIMG" src="Recursos\PJ_Ic\c1028_s.png" alt="">
+            </article>
+            <nav>linea vertical</nav>
+            <article id="nota">
+                <nav>
+                    <span id="MPdescripcion">oufh fouh texto,  esto es un texto de de t kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkknd odpsak+po dfa+oj fd+pok dfopkdfijg igrufefw  esto es un texto de de t kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkknd odpsak+po dfa+oj fd+pok dfopkdfijg igrufefw  esto es un texto de de t kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkknd odpsak+po dfa+oj fd+pok dfopkdfijg igrufefw  esto es un texto de de t kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkknd odpsak+po dfa+oj fd+pok dfopkdfijg igrufefw   ffuah fuh fu hfrouh friohfr  froewfh feouihefw oefwih foiuhf rueba jadp apodsjposap pasdpojsfñ adsop pojds asdpojpasoj fpasodkpof asdopjp</span>
+                    <button id="editarDescripcion"><img src="Recursos\editar_img.png" alt="editar"></button>
+                </nav>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Joan Barceló Fullana</p>
+    </footer>
+    <script src="scripts.js"></script>
+    <script>compLogIn()</script>
+</body>
+</html>

@@ -4,11 +4,14 @@
 /*Selecciona los links y sus estados (hover y visited) para que no mustren cambios de estilo, ya que no nos interesa que se vea cambiado porque forma parte del nav
 también canbia el color del fondo cuando pones el ratón encima para que se sepa que es un link */
 a{color: white; text-decoration: none;}
-a:hover, #contenedor_teams {color: white; font-family: 'Courier New', Courier, monospace; text-decoration: none; background-color: #303033;}
+a:hover,
+#contenedor_teams:hover,
+#contenedor_char:hover,
+#contenedor_others:hover,
+#contenedor_profile:hover,
+.login:hover {color: white; font-family: 'Courier New', Courier, monospace; text-decoration: none; background-color: #303033;}
 a:visited {color: white; font-family: 'Courier New', Courier, monospace; text-decoration: none; }
 /*Selecciona las líneas que hay entre las secciones del nav, les pone un margen a los lados y determina su altura*/
-
-
 .Vbar  {
     height: 75px;
     width: auto;
@@ -26,7 +29,11 @@ a:visited {color: white; font-family: 'Courier New', Courier, monospace; text-de
 }
 /*Hace que lo que es el link que se puede pulsar ocupe todo el recuadro y no solo las letras, esto facilita la interaccion con el nav*/
 nav a,
-#contenedor_teams{
+nav p,
+#contenedor_teams,
+#contenedor_char,
+#contenedor_others,
+#contenedor_profile{
     display: flex;
     height: 95%;
     width: 95%;
@@ -47,6 +54,10 @@ nav a,
     align-items: center;
     justify-content: space-between;
 }
+/* Asigna una tipografia a los botones (button) */
+button {
+    font-family: 'Courier New', Courier, monospace;
+}
 /* Coloca los elementos del nav que se ecuentran a la derecha del icono central*/
 .Cright{
     display: flex;
@@ -58,9 +69,13 @@ nav a,
 .Cright span{
     text-align: center;
 }
-.teams{
+.teams,
+.charnav,
+.others,
+.profile{
     min-width: 100%;
     min-height: 100%;
+    padding-bottom: 0.65%;
 }
 
 /*Coloca los elementos del nav y le pone un color de fondo*/
@@ -78,42 +93,69 @@ header{
     height: auto;
 }
 /*Contenedor para poner en columna la lista*/
-#contenedor_teams{
+#contenedor_teams,
+#contenedor_char,
+#contenedor_others,
+#contenedor_profile{
     flex-direction: column;
     position: relative;
     display: inline-block;
     bottom: 0;
 } 
 /* Submenus desplegables de "TEAMS" */
-.submenu_teams {
+.submenu_teams,
+.submenu_charnav,
+.submenu_others,
+.submenu_profile {
     display: none;
-    /* position: absolute; */
+    position: absolute;
     padding-inline-start: 0px;
 }
 /*Quitar el estilo a los elemntos de las listas*/
-.submenu_teams li{
+.submenu_teams li,
+.submenu_charnav li,
+.submenu_others li,
+.submenu_profile li{
     list-style-type: none;
-    margin: 0;
-    padding: 2%;
-    min-width: 100%;
+    margin-top: 2%;
+    padding: 0%;
     display: flex;
 }
-.submenu_teams a {
+.submenu_teams a,
+.submenu_charnav a,
+.submenu_others a,
+.submenu_profile a,
+.login{
     /* align-self: center; */
     min-width: 100%;
 }
-
+/* Quitar estilo al botón del log in*/
+.login{
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1em;
+}
 /*Hover del desplegable*/
 .teams:hover + .submenu_teams,
-.submenu_teams:hover {
+.submenu_teams:hover,
+.charnav:hover +.submenu_charnav,
+.submenu_charnav:hover,
+.others:hover + .submenu_others,
+.submenu_others:hover,
+.profile:hover + .submenu_profile,
+.submenu_profile:hover {
     display: flex;
     flex-direction: column;
     background-color: #1c1c20;
-    min-width: 81%;
+    min-width: 93%;
     justify-content: center;
     text-align: center;
     padding: 3%;
-    /* background-color: blue; */
+    border: 0.1em solid #f5445f;
+    border-top: transparent;
+    border-bottom-left-radius: 0.8em;
+    border-bottom-right-radius: 0.8em;
 }
 
 /* Define el margen del título de la pagina y su posicion */
@@ -697,6 +739,241 @@ el fondo y que siempre estén las letras en mayusculas*/
     border: #f5445f solid 1px;
     border-radius: 15px;
 }
+
+/* ----------- INICIO PROFILE --------------*/
+.profileInicio main{
+    display: flex;
+    flex-direction: row;
+    background-color: violet;
+}
+
+.profileInicio header{
+    background-image: url(Recursos/biuldbanner.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.profileInicio header h1{
+    display: flex;
+    padding: 3%;
+    margin-left: 3%;
+    margin-right: 3%;
+    justify-content: center;
+    font-size: 5em;
+    text-align: center;
+}
+.profileInicio body{
+    display: flex;
+}
+
+/*Quitar estilo al li*/
+#menuPerfil ul{
+    display: flex;
+    display: table-column;
+    align-content: center;
+    padding-inline-start: 0px;
+    min-width: 95%;
+}
+#menuPerfil ul li{
+    list-style-type: none;
+    margin-top: 10%;
+    min-height: 20%;
+    display: flex;
+}
+#menuPerfil ul li a{
+    min-height: 85%;
+    min-width: 95%;
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+}
+#menuPerfil{
+    font-family: 'Courier New', Courier, monospace;
+    display: inline-flex;
+    max-width: 15%;
+    min-width: 15%;
+    padding-left: 1%;
+    min-height: 50vh;
+    /* background-color: #252527; */
+    background-color: yellow;
+}
+#PerfilInfoCuerpo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: cneter;
+    min-width: 50%;
+    margin: 2%;
+    border-radius: 30px;
+    margin-bottom: 2%;
+    background-color: orange;
+}
+#PerfilInicioInformation{
+    display: flex;
+    min-width: 75%;
+    max-width: 75%;
+    flex-direction: row;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+#PIFIzq{
+    display: flex;
+    min-width: 63%;
+    max-width: 63%;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 1.5em;
+}
+#PIFIzqInfo{
+    display: flex;
+    flex-direction: column;
+    min-width: 45%;
+    max-width: 45%;
+    justify-content: center;
+    align-items: center;
+}
+#PIFDer{
+    display: flex;
+    min-width: 37%;
+    max-width: 37%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2%;
+}
+#nickName{
+    font-size: 3em;
+}
+#server,
+#level{
+    font-size: 2.5em;
+}
+#ProfilePicture{
+    max-width: 75%;
+    max-height: 75%;
+}
+#ProfilePictureCont{
+    min-width: 30%;
+    max-width: 30%;
+    padding: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#lineProfileV{
+    max-width: 100%;
+    min-height: auto;
+}
+#lineProfileVCont{
+    min-width: 5%;
+    max-width: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#ocultarArena,
+#ocultarRTA{
+    max-width: 10%;
+    min-width: 10%;
+    max-height: auto;
+    min-height: auto;
+    background-color: #252527;
+    border-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#ocultarArena img,
+#ocultarRTA img{
+    max-width: 100%;
+    max-height: auto;
+}
+#arenaInfo{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    min-width: 30%;
+    justify-content: space-around;
+    font-size: 1.8em;
+}
+#GuildPicture{
+    max-width: 35%;
+    min-width: 35%;
+    max-height: auto;
+    min-height: auto;
+}
+#MPArena,
+#MPRTA{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+#RTALogo, #arenaLogo{
+    min-width: 45%;
+    min-height: auto;
+}
+#ayudantes{
+    display: flex;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    align-items: center;
+    max-width: 100%;
+    justify-content: center;
+    background-color: blue;
+}
+.ayudanteIMG{
+    min-width: 1em;
+    max-width: auto;
+    min-height: auto;
+    max-height: auto;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+#nota {
+    background-color: white;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border-radius: 30px;
+    min-width: 70%;
+    max-width: 70%;
+    min-height: 20vh;
+}
+#nota nav{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    max-height: auto;
+    padding: 3%;
+    max-width: 100%;
+
+}
+#MPdescripcion{
+    color: black;
+    max-width: 100%;
+    max-height: 80%;
+    min-height: 80%;
+}
+#editarDescripcion{
+    max-width: 5%;
+    min-height: 20%;
+    margin-top: 2%;
+    display: flex;
+    align-self: flex-end;
+    justify-self: flex-end;
+    border-style: none;
+    background-color: transparent;
+}
+
+#editarDescripcion img{
+    max-width: 100%;
+    min-width: 100%;
+}
+
+/*Quitar estilo a los a*/
+#menuPerfil a{color: white; text-decoration: none;}
+#menuPerfil a:hover{color: white; font-family: 'Courier New', Courier, monospace; text-decoration: none; background-color: #303033;}
+#menuPerfil a:visited {color: white; font-family: 'Courier New', Courier, monospace; text-decoration: none; }
 /* ----------- MEDIA QUERYS ----------------*/
 @media screen and (max-width: 800px){
     .Bstats{
