@@ -65,7 +65,7 @@ En aquest punt he creat un formulari per modificar el teu perfil. Quan pitges el
 - Quan pitges damunt els botons d'editar, tant perfil com ajudants. Surt un formulari que està inicialment ocult.
 ### Notificacions emergents
 - En el botó per editar ajudants, s'han de triar 5 personatjes. Si en tries de més o de menos la pàgina et mostra un alert et diu que n'has de triar 5.
-# añadir imagen errorayudantes
+![error](RecursosDocumentacion/errorayudantes.png)
 ### Enquestes/Valoracions Interactives
 - En el botó de editar perfil, la informació que posses al formulari es ver a la pàgina. També té un script que depenguent de la lliga on estiguis mostra l'emblema d'aquesta lliga.
 - A l'apartat de triar ajudants també es canvien les imatges dels ajudants del teu perfil.
