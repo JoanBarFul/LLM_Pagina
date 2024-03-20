@@ -1055,7 +1055,7 @@ el fondo y que siempre estén las letras en mayusculas*/
 }
 
 .modal-content-images .image-container img.selected {
-    border: 2px solid #f5445f; /* Borde para las imágenes seleccionadas */
+    border: 6px solid #f5445f; /* Borde para las imágenes seleccionadas */
 }
 
 .modal-content-images button {
@@ -1074,10 +1074,10 @@ el fondo y que siempre estén las letras en mayusculas*/
     border: 3px solid transparent; /* Establece un borde transparente por defecto */
 }
 
-.modal-content-images .image-container img:hover {
-    border-color: #f5445f; /* Cambia el color del borde al pasar el mouse sobre la imagen */
-    border-radius: 80px; /* Agrega bordes redondeados */
-}
+/* .modal-content-images .image-container img:hover {
+    border-color: #f5445f;
+    border-radius: 80px;
+} */
 
 .modal-content-images .image-container img.selected {
     border-color: #f5445f; /* Establece el color del borde para imágenes seleccionadas */

@@ -13,7 +13,8 @@ function cerrarModal() {
     document.getElementById('menuPerfil').style.filter = 'none';
 }
 
-function actualizarPerfil(){
+function actualizarPerfil(){ 
+    // Recoger datos
     var GuildName = document.getElementById('FGuildName').value;
     var GuildLvl = document.getElementById('FGuildLvl').value;
     var UserName = document.getElementById('FUserName').value;
@@ -21,6 +22,7 @@ function actualizarPerfil(){
     var UserLvl = document.getElementById('FUserLvl').value;
     var Arena = document.getElementById('ArenaRank').value;
     var RTA = document.getElementById('FRTARank').value;
+    // Comprobar si esta bien la informacion metida
     if (GuildName.length > 20) {
         alert("El nombre del gremio no puede tener más de 20 caracteres.");
         return false;
@@ -42,6 +44,7 @@ function actualizarPerfil(){
         return false;
     }
 
+    // Guardar en localStorage
     localStorage.setItem('GuildName', GuildName);
     localStorage.setItem('GuildLvl', GuildLvl);
     localStorage.setItem('UserName', UserName);
@@ -56,7 +59,7 @@ function actualizarPerfil(){
 
 }
 
-function mostrarDatosGuardados() {
+function mostrarDatosGuardados() { // Cargar del localstorage la informacion
     document.getElementById('nombreGuild').innerText = localStorage.getItem('GuildName') || 'GUILDNAME';
     document.getElementById('nivelGuild').innerText = 'Lvl. ' + (localStorage.getItem('GuildLvl') || '1');
     document.getElementById('nickName').innerText = localStorage.getItem('UserName') || 'USERNAME';
@@ -69,7 +72,7 @@ function mostrarDatosGuardados() {
     document.getElementById('a3').src =  localStorage.getItem('a3') || 'Recursos/PJ_Ic/c1086_s.png';
     document.getElementById('a4').src =  localStorage.getItem('a4') || 'Recursos/PJ_Ic/c1012_s.png';
     document.getElementById('a5').src =  localStorage.getItem('a5') || 'Recursos/PJ_Ic/c1028_s.png';
-
+    // Ocultar madales por si acaso
     document.getElementById('myModal').style.display = 'none';
     document.getElementById('myModalImages').style.display = 'none';
 
@@ -78,7 +81,7 @@ function mostrarDatosGuardados() {
     var RTA = localStorage.getItem('RTA') || 'BRONCE';
     var imagen;
     var imagenRTA;
-    switch (Arena) {
+    switch (Arena) { // Elegir imagen de la arena
         case 'BRONCE':
             imagen = 'Recursos/rank/bronce.svg';
             break;
@@ -171,7 +174,7 @@ function seleccionarImagenes() {
 }
 
 
-function cerrarModalImages() {
+function cerrarModalImages() { //Volver la pagina a como estaba
     document.getElementById('PerfilInfoCuerpo').style.filter = 'none';
     document.getElementById('menuPerfil').style.filter = 'none';
     document.getElementById('myModalImages').style.display = 'none';
