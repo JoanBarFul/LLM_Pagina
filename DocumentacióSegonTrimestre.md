@@ -21,12 +21,17 @@ Al cos de la pagina es veu el següent:
   ![ig](RecursosDocumentacion/iPad-800x1024.png)
 - Per entrar desde la pàgina d'inci he de fer el següent:
     1. Pitjam d'amunt el botó del nav 'Profile'.
-    2. Hem de iniciar sessió.
+       ![l1](RecursosDocumentacion/login1.png)
+    3. Hem de iniciar sessió.
       - Per iniciar sessió he ho he fet amb alerts y prompts per afegirlos a la tasca.
       - El nom d'usuari es 'Barful' i la contrasenya es '1234'
-    3. Una vegada iniciat sessió hem de pitjar damunt 'Profile' un altre pic.
-    4. Ara sortirá el link a 'My Profile'
-    5. Pitjam damunt 'My Profile'
+        ![l2](RecursosDocumentacion/login2.png)
+        ![l3](RecursosDocumentacion/login3.png)
+        ![l4](RecursosDocumentacion/login4.png)
+    5. Una vegada iniciat sessió hem de pitjar damunt 'Profile' un altre pic.
+       ![l5](RecursosDocumentacion/login5.png)
+    7. Ara sortirá el link a 'My Profile'
+    8. Pitjam damunt 'My Profile'
 ### COSES MILLORADES
 El que he millorat de la tasca anterior es el tamany de les lletres que han passat de px a em.
 A la part del nav també he modificat alguna cosa. 
