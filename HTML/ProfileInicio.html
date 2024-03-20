@@ -5,10 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyProfile</title>
     <link rel="stylesheet" type="text/css" href="estils.css">
+    <script src="epicseven.js"></script>
 </head>
-<body class="profileInicio">
+<body class="profileInicio" onload="mostrarDatosGuardados()"></body>
+    <!-- NAV MediaQ-->
+    <div id="navOculto">
+        <span class="dropCleft"><!--Parte de la izquierda del nav-->
+            <span id="dropcontenedor_char">
+                <p class="dropcharnav">EPICSEVEN</p> <!--Vista principal de los "characters"-->
+                <ul class="dropsubmenu_charnav"> <!-- Submenus desplegables -->
+                    <li><a href="char.html">LIST</a></li>
+                    <li><a href="">BUILDS</a></li>
+                    <li><a href="">ARTIFACTS</a></li>
+                    <li><a href="">ARENA</a></li>
+                    <li><a href="">RTA</a></li>
+                    <li><a href="">GUILD</a></li>
+                    <li><a href="">HUNT</a></li>
+                    <li><a href="">RIFT</a></li>
+                    <li><a href="">LABIRINTH</a></li>
+                    <li><a href="">ESPIRIT</a></li>
+                    <li><a href="">EXPEDITIONS</a></li>
+                    <li><a href="">SUMMON SIM</a></li>
+                </ul>
+            </span>
+        </span>
+        <span class="dropRCleft"><!--Parte de la izquierda del nav-->
+            <span id="dropRcontenedor_char">
+                <p class="dropRcharnav">PERFIL</p> <!--Vista principal de los "characters"-->
+                <ul class="dropRsubmenu_charnav"> <!-- Submenus desplegables -->
+                    <li><a href="ProfileInicio.html">PROFILE</a></li>
+                    <li><a href="">BUILDS</a></li>
+                    <li><a href="">SAVED BUILDS</a></li>
+                    <li><a href="">INFORMATION</a></li>
+                </ul>
+            </span>
+        </span>
+    </div>
     <header>
-        <nav><!--Esto es la barra de navegación que tiene tres parte, la central con el logo, la derecha con dos links y la izquierda con dos links-->
+        <nav class="nav"><!--Esto es la barra de navegación que tiene tres parte, la central con el logo, la derecha con dos links y la izquierda con dos links-->
             <span class="Cleft"><!--Parte de la izquierda del nav-->
                     <span id="contenedor_char">
                         <p class="charnav">CHARACTERS</p> <!--Vista principal de los "characters"-->
@@ -22,6 +56,7 @@
                     <span id="contenedor_teams">
                         <p class="teams">TEAMS</p> <!-- Vista principal -->
                         <ul class="submenu_teams"> <!-- Submenus desplegables -->
+                            <li><a href="inicio.html">INICIO</a></li>
                             <li><a href="">ARENA</a></li>
                             <li><a href="">RTA</a></li>
                             <li><a href="">GUILD</a></li>
@@ -62,7 +97,7 @@
     <main>
         <section id="menuPerfil"> <!--Menu de la izquierda-->
             <ul>
-                <li><a href="">PROFILE</a></li>
+                <li><a href="ProfileInicio.html">PROFILE</a></li>
                 <li><a href="">BUILDS</a></li>
                 <li><a href="">SAVED BUILDS</a></li>
                 <li><a href="">INFORMATION</a></li>
@@ -72,7 +107,7 @@
             <article id="PerfilInicioInformation">
                 <span id="PIFIzq">
                     <span id="ProfilePictureCont">
-                        <img id="ProfilePicture" src="Recursos\PJ_Ic\benimaruPortrait.png" alt="">
+                        <img id="ProfilePicture" src="Recursos\PJ_Ic\benimaruPortrait.png" alt="" >
                     </span>
                     <span id="PIFIzqInfo">
                         <img id="GuildPicture" src="Recursos\guildIMG.png" alt="">
@@ -90,43 +125,183 @@
                     <p id="level">Lvl.69</p>
                 </span>
             </article>
-            <nav>linea vertical</nav>
+            <nav class="lineaContainer"><img class="PILH" src="Recursos\lineaHLarge.png" alt=""></nav>
             <article id="arenaInfo">
                 <span id="MPArena">
-                    <button id="ocultarArena"><img src="Recursos\visible.png" alt=""></button>
-                    <img id="arenaLogo" src="Recursos\guildIMG.png" alt="">
+                    <!-- <button id="ocultarArena"><img src="Recursos\visible.png" alt=""></button> -->
+                    <img class="arenaLogo"  id="IdArenaLogo" src="Recursos\rank\champion.svg" alt="rango">
                     <p>Arena</p>
                     <p id="arenaRank">Champion</p>
                 </span>
                 <span id="MPRTA">
-                    <button id="ocultarRTA"><img src="Recursos\visible.png" alt=""></button>
-                    <img id="RTALogo" src="Recursos\guildIMG.png" alt="">
-                    <p>Arena</p>
+                    <!-- <button id="ocultarRTA"><img src="Recursos\visible.png" alt=""></button> -->
+                    <img class="arenaLogo" id="IdRTALogo" src="Recursos\rank\plata.svg" alt="rango">
+                    <p>RTA</p>
                     <p id="RTARank">Champion</p>
                 </span>
             </article>
-            <nav>linea vertical</nav>
+            <nav class="lineaContainer"><img class="PILH" src="Recursos\lineaHLarge.png" alt=""></nav>
             <article id="ayudantes">
-                <button>editar ayudantes</button>
-                <img class="ayudanteIMG" src="Recursos\PJ_Ic\janutaPortrait.png" alt="">
-                <img class="ayudanteIMG" src="Recursos\PJ_Ic\c1097_s01_s.png" alt="">
-                <img class="ayudanteIMG" src="Recursos\PJ_Ic\c1086_s.png" alt="">
-                <img class="ayudanteIMG" src="Recursos\PJ_Ic\c1012_s.png" alt="">
-                <img class="ayudanteIMG" src="Recursos\PJ_Ic\c1028_s.png" alt="">
+                <img class="ayudanteIMG" id="a1" src="Recursos\PJ_Ic\janutaPortrait.png" alt="a1">
+                <img class="ayudanteIMG" id="a2" src="Recursos\PJ_Ic\c1097_s01_s.png" alt="a2">
+                <img class="ayudanteIMG" id="a3" src="Recursos\PJ_Ic\c1086_s.png" alt="a3">
+                <img class="ayudanteIMG" id="a4" src="Recursos\PJ_Ic\c1012_s.png" alt="a4">
+                <img class="ayudanteIMG" id="a5" src="Recursos\PJ_Ic\c1028_s.png" alt="a5">
             </article>
-            <nav>linea vertical</nav>
-            <article id="nota">
+            <nav class="lineaContainer"><img class="PILH" src="Recursos\lineaHLarge.png" alt=""></nav>
+            <!-- <article id="nota">
                 <nav>
-                    <span id="MPdescripcion">oufh fouh texto,  esto es un texto de de t kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkknd odpsak+po dfa+oj fd+pok dfopkdfijg igrufefw  esto es un texto de de t kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkknd odpsak+po dfa+oj fd+pok dfopkdfijg igrufefw  esto es un texto de de t kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkknd odpsak+po dfa+oj fd+pok dfopkdfijg igrufefw  esto es un texto de de t kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkknd odpsak+po dfa+oj fd+pok dfopkdfijg igrufefw   ffuah fuh fu hfrouh friohfr  froewfh feouihefw oefwih foiuhf rueba jadp apodsjposap pasdpojsfñ adsop pojds asdpojpasoj fpasodkpof asdopjp</span>
-                    <button id="editarDescripcion"><img src="Recursos\editar_img.png" alt="editar"></button>
+                    <span id="MPdescripcion">...</span>
                 </nav>
+            </article> -->
+            <article id="botonesEditar">
+                <!-- <button onclick="abrirPPImages()">Foto Perfil</button> -->
+                <button onclick="mostrarModal()">Editar Perfil</button>
+                <button onclick="abrirImagenes()">Editar Ayudantes</button>
+                <!-- <button onclick="mostrarModalDescripcion()">Editar Descripcion</button> -->
             </article>
         </section>
+        <!--Formularios de edición del perfil-->
+        <!--Editar Informacion Perfil-->
+        <div id="myModal" class="modal">
+            <!-- Contenido del modal (formulario) -->
+            <div class="modal-content">
+                <!-- Botón para cerrar el modal -->
+                <span class="close" onclick="cerrarModal()">&times;</span>
+                <!-- Contenido del formulario -->
+                <form>
+                    <span>
+                        <label for="FGuildName">Guild Name</label><br>
+                        <input type="text" id="FGuildName" name="FGuildName"><br>
+                    </span>
+                    <span>
+                        <label for="FGuildLvl">Guild Lvl</label><br>
+                        <input type="text" id="FGuildLvl" name="FGuildLvl"><br>
+                    </span>
+                    <span>
+                        <label for="FUserName">User Name</label><br>
+                        <input type="text" id="FUserName" name="FUserName"><br>
+                    </span>
+                    <span>
+                        <label for="FRegion">Region</label><br>
+                        <select name="FRegion" id="FRegion">
+                            <option value="ASIA">ASIA</option>
+                            <option value="EUROPE">EUROPE</option>
+                            <option value="JAPAN">JAPAN</option>
+                            <option value="GLOBAL">GLOBAL</option>
+                        </select><br> 
+                    </span>
+                    <span>
+                        <label for="FUserLvl">User Lvl</label><br>
+                        <input type="text" id="FUserLvl" name="FUserLvl"><br>
+                    </span>
+                    <span>
+                        <label for="FArenaRank">Arena Rank</label><br>
+                        <select name="ArenaRank" id="ArenaRank">
+                            <option value="BRONCE">BRONCE</option>
+                            <option value="PLATA">PLATA</option>
+                            <option value="ORO">ORO</option>
+                            <option value="AS">AS</option>
+                            <option value="RETADOR">RETADOR</option>
+                            <option value="CAMPEON">CAMPEON</option>
+                            <option value="LEGENDA">LEGENDA</option>
+                        </select><br>
+                    </span>
+                    <span>
+                        <label for="FRTARank">RTA Rank</label><br>
+                        <select name="FRTARank" id="FRTARank">
+                            <option value="BRONCE">BRONCE</option>
+                            <option value="PLATA">PLATA</option>
+                            <option value="ORO">ORO</option>
+                            <option value="AS">AS</option>
+                            <option value="RETADOR">RETADOR</option>
+                            <option value="CAMPEON">CAMPEON</option>
+                            <option value="LEGENDA">LEGENDA</option>
+                        </select><br>
+                    </span>
+                    <input type="submit" value="Enviar" onclick="actualizarPerfil()">
+                </form>
+            </div>
+        </div>
+        <!--Cambiar foto de perfil-->
+        <div id="myModalImages" class="modal">
+            <!-- Contenido del modal (imágenes) -->
+            <div class="modal-content-images">
+                <!-- Botón para cerrar el modal -->
+                <span class="close" onclick="cerrarModalImages()">&times;</span>
+                <!-- Contenido del formulario -->
+                <div id="imageContainer">
+                    <!-- Imágenes para seleccionar -->
+                    <label class="image-container" onmouseover="mostrarNombre(this)" onmouseout="ocultarNombre(this)">
+                        <img src="Recursos\PJ_Ic\c1066_s.png" alt="Imagen" onclick="toggleSelection(this)">
+                        <span class="character-name">LUNA</span>
+                    </label>
+                    <label class="image-container" onmouseover="mostrarNombre(this)" onmouseout="ocultarNombre(this)">
+                        <img src="Recursos\PJ_Ic\nahkwolPortrait.png" alt="Imagen" onclick="toggleSelection(this)">
+                        <span class="character-name">NAHKWOL</span>
+                    </label>
+                    <label class="image-container" onmouseover="mostrarNombre(this)" onmouseout="ocultarNombre(this)">
+                        <img src="Recursos\PJ_Ic\lionheartCermiaPortrait.png" alt="Imagen" onclick="toggleSelection(this)">
+                        <span class="character-name">LION HEART CERMIA</span>
+                    </label>
+                    <label class="image-container" onmouseover="mostrarNombre(this)" onmouseout="ocultarNombre(this)">
+                        <img src="Recursos\PJ_Ic\luaPortrait.png" alt="Imagen" onclick="toggleSelection(this)">
+                        <span class="character-name">LUA</span>
+                    </label>
+                    <label class="image-container" onmouseover="mostrarNombre(this)" onmouseout="ocultarNombre(this)">
+                        <img src="Recursos\PJ_Ic\melanyPortrait.png" alt="Imagen" onclick="toggleSelection(this)">
+                        <span class="character-name">MELANY</span>
+                    </label>
+                    <label class="image-container" onmouseover="mostrarnombre(this)" onmouseout="ocultarnombre(this)">
+                        <img src="Recursos\PJ_Ic\c3103_s.png" alt="Imagen" onclick="toggleSelection(this)">
+                        <span class="character-name">GLEEN</span>
+                    </label>
+                    <label class="image-container" onmouseover="mostrarnombre(this)" onmouseout="ocultarnombre(this)">
+                        <img src="Recursos\PJ_Ic\c3071_s.png" alt="Imagen" onclick="toggleSelection(this)">
+                        <span class="character-name">CARMAINEROSE</span>
+                    </label>
+                    <label class="image-container" onmouseover="mostrarnombre(this)" onmouseout="ocultarnombre(this)">
+                        <img src="Recursos\PJ_Ic\c3043_s.png" alt="Imagen" onclick="toggleSelection(this)">
+                        <span class="character-name">ADLAY</span>
+                    </label>
+                    <label class="image-container" onmouseover="mostrarnombre(this)" onmouseout="ocultarnombre(this)">
+                        <img src="Recursos\PJ_Ic\c5050_s.png" alt="Imagen" onclick="toggleSelection(this)">
+                        <span class="character-name">FAIRYTALE TENEBRIA</span>
+                    </label>
+                    <label class="image-container" onmouseover="mostrarnombre(this)" onmouseout="ocultarnombre(this)">
+                        <img src="Recursos\PJ_Ic\c2024_s.png" alt="Imagen" onclick="toggleSelection(this)">
+                        <span class="character-name">BRIAR WHITCH ISERIA</span>
+                    </label>
+                    <label class="image-container" onmouseover="mostrarnombre(this)" onmouseout="ocultarnombre(this)">
+                        <img src="Recursos\PJ_Ic\c1146_s.png" alt="Imagen" onclick="toggleSelection(this)">
+                        <span class="character-name">BENIMARU</span>
+                    </label>
+                    <label class="image-container" onmouseover="mostrarnombre(this)" onmouseout="ocultarnombre(this)">
+                        <img src="Recursos\PJ_Ic\c1105_s.png" alt="Imagen" onclick="toggleSelection(this)">
+                        <span class="character-name">ELPHET VALENTINE</span>
+                    </label>
+                    <label class="image-container" onmouseover="mostrarnombre(this)" onmouseout="ocultarnombre(this)">
+                        <img src="Recursos\PJ_Ic\belianPortrait.png" alt="Imagen" onclick="toggleSelection(this)">
+                        <span class="character-name">BELIAN</span>
+                    </label>
+                    <label class="image-container" onmouseover="mostrarnombre(this)" onmouseout="ocultarnombre(this)">
+                        <img src="Recursos\PJ_Ic\c1029_s.png" alt="Imagen" onclick="toggleSelection(this)">
+                        <span class="character-name">LEO</span>
+                    </label>
+                <div>
+                <button onclick="seleccionarImagenes()">Seleccionar</button>
+            </div>
+        </div>
+        <!--Cambiar foto de perfil-->
+        
+        
     </main>
     <footer>
         <p>Joan Barceló Fullana</p>
     </footer>
-    <script src="scripts.js"></script>
+    <script src="scripts.js">
+
+    </script>
     <script>compLogIn()</script>
 </body>
 </html>
