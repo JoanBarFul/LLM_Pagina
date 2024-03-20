@@ -35,7 +35,7 @@ Al cos de la pagina es veu el següent:
 ### COSES MILLORADES
 El que he millorat de la tasca anterior es el tamany de les lletres que han passat de px a em.
 A la part del nav també he modificat alguna cosa. 
-  1. Els submenus
+  1. Els submenus  
      -He afegit dos menus més
      - He afegit que quan pases per damunt d'un dels menus del nav, aquest desplegui la seva llista de submenús
   2. Media Querries
