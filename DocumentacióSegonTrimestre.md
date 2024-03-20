@@ -16,6 +16,9 @@ Al cos de la pagina es veu el següent:
   Aquestes es poden canviar amb el botó d'editar ajudants.
 - Botons per editar
   A la part inferiror del cos es troben els dos botóns que mostren un formulari per canviar la informació.
+  ![ip](RecursosDocumentacion/Galaxy-S9-Note-8-S8-480x740.png)
+  ![im](RecursosDocumentacion/Laptop-2-1920x1080.png)
+  ![ig](RecursosDocumentacion/iPad-800x1024.png)
 - Per entrar desde la pàgina d'inci he de fer el següent:
     1. Pitjam d'amunt el botó del nav 'Profile'.
     2. Hem de iniciar sessió.
