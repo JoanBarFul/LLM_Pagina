@@ -45,6 +45,9 @@ A la part del nav també he modificat alguna cosa.
 ## Formulari de Contacte Interactiu
 ### Crea un formulari de contacte
 En aquest punt he creat un formulari per modificar el teu perfil. Quan pitges el botó d'editar perfil s'obri un formular que et demana la informació que vols que tengui el teu perfil. Quan envies el formulari es guarda dins un localStorage y s'actualitza la pàgina amb aquesta informació.
+![epp](RecursosDocumentacion/epp.png)
+![epm](RecursosDocumentacion/epm.png)
+![epg](RecursosDocumentacion/epg.png)
 ### S'ha d'adaptar a diferents tipus de resolucions de pantalla
 
 ### Valida tots els camps on sigui necessari per a garantir l'entrada de dades correcta abans d'enviar el formulari
