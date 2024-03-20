@@ -1,6 +1,21 @@
 ## Introducció
 Aquest trimestre he continuat avançant la pàgina anterior, pero m'he centrat en un pàgina específica. Aquesta pàgina és la del [perfil de l'usuari](HTML/ProfileInicio.html).
 En aquesta pàgina es mostra el perfil de l'usuari, on aques el pot personalitzar al seu gust y amb la seva informació.
+## INTERACCIONS DE LA PÀGINA
+Començant pel nav, ara quan pases per damunt o pitges les opcions del menú aquestes canvien el fons y et mostren just davall els submenus que té.
+A la part de l'esquerra de la pàgina y ha un index per navegar entre les pàgines del perfil (les altres pàgines no estàn implementades)
+Al cos de la pagina es veu el següent:
+  - Informació de l'usuari
+    Amb una foto de perfil, gremi, nivell del gremi, nom d'usuari, regió y nivell de l'usuari.
+    Es pot modificar amb el botó d'editar perfil.
+- LLiga on es troba
+  Una a l'esquerra el de l'"arena", i a la dreta el de "RTA".
+  Mitjançant el botó d'editar perfil es pot canviar la lliga on estás y també s'actualitzará la imatge.
+- Els ajudants
+  Els ajudants són 5 fotografies.
+  Aquestes es poden canviar amb el botó d'editar ajudants.
+- Botons per editar
+  A la part inferiror del cos es troben els dos botóns que mostren un formulari per canviar la informació.
 ### COSES MILLORADES
 El que he millorat de la tasca anterior es el tamany de les lletres que han passat de px a em.
 A la part del nav també he modificat alguna cosa. 
