@@ -2,7 +2,7 @@
 var login = false
 function compLogIn(){
     if (login == true){
-        let contingut = ('<li id="myprofile"><a href="">MY PROFILE</a></li>')
+        let contingut = ('<li id="myprofile"><a href="ProfileInicio.html">MY PROFILE</a></li>')
         document.getElementById('logbutton').insertAdjacentHTML("beforebegin",contingut);
         let logtext = "LOG OUT";
         document.getElementById('buttonid').innerText = logtext;
