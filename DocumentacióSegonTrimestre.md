@@ -16,6 +16,14 @@ Al cos de la pagina es veu el següent:
   Aquestes es poden canviar amb el botó d'editar ajudants.
 - Botons per editar
   A la part inferiror del cos es troben els dos botóns que mostren un formulari per canviar la informació.
+- Per entrar desde la pàgina d'inci he de fer el següent:
+    1. Pitjam d'amunt el botó del nav 'Profile'.
+    2. Hem de iniciar sessió.
+      - Per iniciar sessió he ho he fet amb alerts y prompts per afegirlos a la tasca.
+      - El nom d'usuari es 'Barful' i la contrasenya es '1234'
+    3. Una vegada iniciat sessió hem de pitjar damunt 'Profile' un altre pic.
+    4. Ara sortirá el link a 'My Profile'
+    5. Pitjam damunt 'My Profile'
 ### COSES MILLORADES
 El que he millorat de la tasca anterior es el tamany de les lletres que han passat de px a em.
 A la part del nav també he modificat alguna cosa. 
