@@ -49,24 +49,38 @@ En aquest punt he creat un formulari per modificar el teu perfil. Quan pitges el
 ![epm](RecursosDocumentacion/epm.png)
 ![epg](RecursosDocumentacion/epg.png)
 ### S'ha d'adaptar a diferents tipus de resolucions de pantalla
-
+![epp](RecursosDocumentacion/epp.png)
+![epm](RecursosDocumentacion/epm.png)
+![epg](RecursosDocumentacion/epg.png)
 ### Valida tots els camps on sigui necessari per a garantir l'entrada de dades correcta abans d'enviar el formulari
 - Els camps 'Guild Name' y 'User Name', només accepten 25 lletres
 - El camp 'Guild Lvl' només accepta números del 0-20
 - El camp 'User Lvl' només accepta números del 0-70
-- Els altres camps he obtat per fer-los amb opcions per evitar que l'usuari introdueixi una data que no vull
+- Els altres camps he obtat per fer-los amb opcions per evitar que l'usuari introdueixi una data que no vull.
+ ![errornum](RecursosDocumentacion/errornum.png)
 ## Scripts
 ### Càrrega dinàmica de contingut
 - L'apartat del nav, quan hi passes per damunt mostra el submenus.
+![submenus](RecursosDocumentacion/submenus.png)
 - Quan pitges damunt els botons d'editar, tant perfil com ajudants. Surt un formulari que està inicialment ocult.
 ### Notificacions emergents
-- En el botó per editar ajudants, s'han de triar 5 personatjes. Si en tries de més o de menos la pàgina et mostra un alert et diu que n'has de triar 5
+- En el botó per editar ajudants, s'han de triar 5 personatjes. Si en tries de més o de menos la pàgina et mostra un alert et diu que n'has de triar 5.
+# añadir imagen errorayudantes
 ### Enquestes/Valoracions Interactives
 - En el botó de editar perfil, la informació que posses al formulari es ver a la pàgina. També té un script que depenguent de la lliga on estiguis mostra l'emblema d'aquesta lliga.
 - A l'apartat de triar ajudants també es canvien les imatges dels ajudants del teu perfil.
+  ![canvip](RecursosDocumentacion/canvip.png)
+![canvim](RecursosDocumentacion/canvim.png)
+![canvig](RecursosDocumentacion/canvig.png)
 ### Canvis d'estil
 - El que he fet per aquest apartat és que puguis tiriar el ajudants que vulguis i es canviin al perfil.
+  ![canvip](RecursosDocumentacion/canvip.png)
+![canvim](RecursosDocumentacion/canvim.png)
+![canvig](RecursosDocumentacion/canvig.png)
 ### Imatges
 - El botó de triar ajudants mostra una galeria amb diferents personatges, els quals pots triar. Cuan pases el ratolí per damunt lal imatge es difumina y surt damunt la imatge el nom del personatge. Quan selecciones un personatge aques es queda marcat amb un marc de color vermell. Es poden seleccionr y desseleccionar.
+![bap](RecursosDocumentacion/bap.png)
+![bam](RecursosDocumentacion/bam.png)
+![bag](RecursosDocumentacion/bag.png)
 
 
